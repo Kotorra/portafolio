@@ -11,6 +11,14 @@
     justify-content: center;
     padding: 2px;
 }
+.cardgradient2 {
+    background: var(--border-color);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    z-index: 3;
+}
 
 .cardbodygradient {
     background: var(--cardheader-color);
@@ -51,12 +59,19 @@ body {
 
 .rrss {
     list-style: none;
-    font-size: 12px;
 
 }
 
 .item {
     margin: 5px;
+}
+a{
+    text-decoration: none;
+
+}
+
+a:hover{
+    color: antiquewhite;
 }
 
 .header {
@@ -73,12 +88,31 @@ body {
     border: 1px solid #00131f;
     padding: 10px;
 }
+.bentoformacion {
+    background: var(--bento-color);
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+#showbento{
+    display: none;
+    position:fixed;
+    margin: auto;
+    inset: 0;
+    z-index: 3;
+    max-width: fit-content;
+    max-height: 50%;
+    box-shadow: 20px 20px 20px #000;
+}
+
 
 .poppins-light {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
 }
+
 
 .poppins-regular {
     font-family: "Poppins", sans-serif;
@@ -190,7 +224,7 @@ button:hover span {
 
 button:active {
 
-    transform: scale(0, 9)
+    transform: scale(1.1, 1.1)
 }
 
 .imgborder{
@@ -199,4 +233,18 @@ button:active {
     max-width: 340px;
     max-height: 160px;
     object-fit:cover;
+}
+
+.formulario{
+    display: flex;
+    justify-content: start;
+}
+
+.meme{
+    border-radius: 15px;
+}
+
+#final{
+    background: rgb(49,199,122);
+    background: radial-gradient(ellipse at bottom, rgb(41, 109, 211) 0%, rgb(0, 175, 202) 50%, rgb(5, 50, 248) 100%); 
 }
