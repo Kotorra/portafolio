@@ -192,16 +192,16 @@
                         <legend>Si quieres contratar, deja un mensaje:</legend>
                         <div>
                             <label class="m-2 justify-self-start">Nombre:
-                                <input type="text" id="inputnombre" name="name" placeholder="Juanito Lechuga" required>
+                                <input class="inw" type="text" id="inputnombre" name="name" placeholder="Juanito Lechuga" required>
                             </label>
                         </div>
                         <label class="m-2">Email:
-                            <input type="text" id="inputemail" name="email" placeholder="Juanito@Lechuga.cl" required>
+                            <input class="inw" pattern="^.+@.+$" type="text" id="inputemail" name="email" placeholder="Juanito@Lechuga.cl" required>
                         </label>
 
                         <label class="m-2">Mensaje:
                             <div>
-                                <textarea name="mensaje" id="inputmensaje" placeholder="Estimado Don S..." required
+                                <textarea class="inw" name="mensaje" id="inputmensaje" maxlength="500" placeholder="Estimado Don S..." required
                                     size="25">
                                 </textarea>
                             </div>
