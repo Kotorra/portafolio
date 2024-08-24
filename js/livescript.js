@@ -1,6 +1,6 @@
-// let visible=document.getElementById("showbento")
-// visible.style.display="none"
 const mostrarbento = document.getElementById("mostrarbento")
+const txtm=document.getElementById("txtm")
+txtm.style.display="none"
 
 mostrarbento.addEventListener("click", function() {
     document.getElementById("showbento").style.display="block";
@@ -21,4 +21,12 @@ function norecharge(){
     let inputmensaje=document.getElementById("inputmensaje");
     inputmensaje.value="";
 }
+function esoestodo(){
+    if (document.getElementById("txtm").style.display==="none"){
+        document.getElementById("txtm").style.display="block";
+    }else{
+        document.getElementById("txtm").style.display="none";
+    }
+}
 
+document.getElementById("imgm").onclick=esoestodo;

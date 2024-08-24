@@ -1,7 +1,7 @@
 :root {
     --border-color: linear-gradient(to right, rgb(71, 203, 255) 0%, rgb(47, 0, 255) 100%);
     --cardheader-color: linear-gradient(to right, rgb(0, 45, 59) 0%, rgb(10, 0, 53) 100%);
-    --bento-color:linear-gradient(to right, rgb(0, 9, 12) 0%, rgb(0, 6, 22) 100%);
+    --bento-color: linear-gradient(to right, rgb(0, 9, 12) 0%, rgb(0, 6, 22) 100%);
 }
 
 .cardgradient {
@@ -11,6 +11,7 @@
     justify-content: center;
     padding: 2px;
 }
+
 .cardgradient2 {
     background: var(--border-color);
     border-radius: 15px;
@@ -27,24 +28,28 @@
     height: 100%;
 
 }
-.textoheader{
+
+.textoheader {
     background: #000;
     background: linear-gradient(to right, rgb(96, 206, 250) 0%, rgb(60, 16, 255) 100%);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip:text;
+    -webkit-background-clip: text;
     background-clip: text;
     text-shadow: 2px 2px 5px #0000006c;
 
 }
-.cardbodynb{
+
+.cardbodynb {
     height: 150px;
     width: 320px;
 }
-.bentoproyecto{
+
+.bentoproyecto {
     height: 410px;
 }
+
 body {
-    background-color: rgb(0, 4, 8);
+    background: linear-gradient(153deg, rgb(0, 4, 15), rgb(1, 0, 5));
     max-width: 720px;
     margin: auto;
     color: rgb(0, 162, 236);
@@ -66,12 +71,13 @@ body {
 .item {
     margin: 5px;
 }
-a{
+
+a {
     text-decoration: none;
 
 }
 
-a:hover{
+a:hover {
     color: antiquewhite;
 }
 
@@ -89,6 +95,7 @@ a:hover{
     border: 1px solid #00131f;
     padding: 10px;
 }
+
 .bentoformacion {
     background: var(--bento-color);
     border-radius: 15px;
@@ -96,9 +103,9 @@ a:hover{
     height: 100%;
 }
 
-#showbento{
+#showbento {
     display: none;
-    position:fixed;
+    position: fixed;
     margin: auto;
     inset: 0;
     z-index: 3;
@@ -207,7 +214,7 @@ button {
 
 button span {
 
-    background-image:linear-gradient(to right, rgb(0, 45, 59) 0%, rgb(10, 0, 53) 100%);
+    background-image: linear-gradient(to right, rgb(0, 45, 59) 0%, rgb(10, 0, 53) 100%);
 
     padding: 10px 16px;
 
@@ -228,31 +235,54 @@ button:active {
     transform: scale(1.1, 1.1)
 }
 
-.imgborder{
+.imgborder {
     border-radius: 15px;
     margin-bottom: 5px;
     max-width: 340px;
     max-height: 160px;
-    object-fit:cover;
+    object-fit: cover;
 }
 
-.formulario{
+.formulario {
     display: flex;
     justify-content: start;
 }
 
-.meme{
+.meme {
     border-radius: 15px;
 }
 
-#final{
-    background: rgb(49,199,122);
-    background: radial-gradient(ellipse at bottom, rgb(30, 120, 255) 0%, rgb(0, 175, 202) 50%, rgb(5, 50, 248) 100%); 
+#final {
+    background: rgb(49, 199, 122);
+    background: radial-gradient(ellipse at bottom, rgb(0, 46, 114) 0%, rgb(0, 175, 202) 50%, rgb(5, 50, 248) 100%);
 }
 
-.inw{
+.inw {
     width: 70%;
     border-radius: 5px;
-    background:linear-gradient(to right, rgb(150, 240, 247) 0%, rgb(183, 207, 255) 100%);
-    border:2px solid #007ac5;
+    background: linear-gradient(to right, rgb(150, 240, 247) 0%, rgb(183, 207, 255) 100%);
+    border: 2px solid #007ac5;
+}
+
+.esoeso {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.todo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.txt{
+    font-size: 25px;
+    color: antiquewhite;
+ 
+}
+.txt:hover{
+    font-size: 27px;
+    transition: .5s;
 }
